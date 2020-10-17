@@ -3,6 +3,7 @@ paella.addPlugin(function() {
 	return class FullScreenPlugin extends paella.ButtonPlugin {
 		
 		getIndex() { return 551; }
+		getAriaLabel() { return base.dictionary.translate("Go Fullscreen"); }
 		getAlignment() { return 'right'; }
 		getSubclass() { return "showFullScreenButton"; }
 		getIconClass() { return 'icon-fullscreen'; }

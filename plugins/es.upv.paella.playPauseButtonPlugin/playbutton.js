@@ -15,6 +15,7 @@ paella.addPlugin(function() {
 		getName() { return "es.upv.paella.playPauseButtonPlugin"; }
 		getDefaultToolTip() { return base.dictionary.translate("Play"); }
 		getIndex() { return 110; }
+		getAriaLabel() { return base.dictionary.translate("Play"); }
 	
 		checkEnabled(onSuccess) {
 			onSuccess(true);

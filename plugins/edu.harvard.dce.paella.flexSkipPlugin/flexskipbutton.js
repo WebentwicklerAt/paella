@@ -3,6 +3,7 @@ paella.addPlugin(function() {
 		getAlignment() { return 'left'; }
 		getName() { return "edu.harvard.dce.paella.flexSkipPlugin"; }
 		getIndex() { return 121; }
+		getAriaLabel() { return base.dictionary.translate(this.formatMessage()); }
 		getSubclass() { return 'flexSkip_Rewind_10'; }
 		getIconClass() { return 'icon-back-10-s'; }
 		formatMessage() { return 'Rewind 10 seconds'; }
@@ -29,6 +30,7 @@ paella.addPlugin(function() {
 
 	return class FlexSkipForwardPlugin extends paella.plugins.FlexSkipPlugin {
 		getIndex() { return 122; }
+		getAriaLabel() { return base.dictionary.translate(this.formatMessage()); }
 		getName() { return "edu.harvard.dce.paella.flexSkipForwardPlugin"; }
 		getSubclass() { return 'flexSkip_Forward_30'; }
 		getIconClass() { return 'icon-forward-30-s'; }

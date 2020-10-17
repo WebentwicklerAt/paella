@@ -459,6 +459,9 @@
 			super('img','lazyLoadThumbnailContainer',{});
 			this.domElement.src = src;
 			this.domElement.alt = "";
+			this.domElement.role = 'button';
+			this.domElement.title = base.dictionary.translate("Play");
+			this.domElement["aria-label"] = base.dictionary.translate("Play");
 
 			this.container = LazyThumbnailContainer.GetIconElement();
 			if (!paella.player.videoContainer) {
